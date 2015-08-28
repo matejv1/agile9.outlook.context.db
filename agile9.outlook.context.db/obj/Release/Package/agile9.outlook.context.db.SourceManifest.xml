@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <DbDacFx path="C:\Users\Matej\Google Drive\Source\agile9.outlook.context.db\agile9.outlook.context.db\obj\Release\AutoScripts\dbContext_IncrementalSchemaOnly.dacpac" dacpacAction="Deploy" />
+  <IisApp path="C:\Users\Matej\Google Drive\Source\agile9.outlook.context.db\agile9.outlook.context.db\obj\Release\Package\PackageTmp" managedRuntimeVersion="v4.0" />
+  <setAcl path="C:\Users\Matej\Google Drive\Source\agile9.outlook.context.db\agile9.outlook.context.db\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\Matej\Google Drive\Source\agile9.outlook.context.db\agile9.outlook.context.db\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

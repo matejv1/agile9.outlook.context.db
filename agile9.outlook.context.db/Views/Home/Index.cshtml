@@ -1,0 +1,110 @@
+﻿
+
+<div class="row" ng-cloak>
+    <div class="coll-md-12" style="display:none;">
+
+
+
+        <div class="itemdev" ng-controller="TestCtrl as ctrl" ng-cloak>
+            <div class="companies" ng-repeat="company in ctrl.companies">
+                {{company.Name}} - {{company.Id}}
+            </div>
+        </div>
+
+        <div class="panel panel-default" ng-controller="CompanyController as cmd">
+            <div class="panel-heading">Company</div>
+            <div class="panel-body">
+
+
+
+                Edit <input type="checkbox" ng-model="editMode" /> <br />
+                Add <input type="checkbox" ng-model="addMode" /> <br />
+              
+
+                <div class="form-container" ng-show="addMode">
+                    <h3>Add Customer</h3>
+
+                    <div class="form-horizontal">
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="txtID" class="col-lg-2 control-label">ID:</label>
+                                <div class="col-lg-6">
+                                    <input id="txtID" type="text" readonly class="form-control" ng-model="company.ID">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtName" class="col-lg-2 control-label">Name:</label>
+                                <div class="col-lg-6">
+                                    <input id="txtName" type="text" class="form-control" ng-model="company.Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtEmail" class="col-lg-2 control-label">Email:</label>
+                                <div class="col-lg-6">
+                                    <input id="txtEmail" type="email" class="form-control" ng-model="company.Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtLogoUrl" class="col-lg-2 control-label">Logo Url:</label>
+                                <div class="col-lg-6">
+                                    <input id="txtLogoUrl" type="text" class="form-control" ng-model="company.LogoUrl">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-offset-2">
+                                    <input id="cmdSave" type="button" class="button" value="Save" data-ng-click="addCompany()" />
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Client</div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Insurance</div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Car</div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+
+        <div class="div" ng-controller="appControllers">
+
+            <div class="item" ng-repeat="item in movies">
+                {{item.Name}}
+            </div>
+
+            {{movies}}
+
+        </div>
+
+        <div class="content" id="company">
+            <form name="userForm">
+                <div class="form-group" show-errors>
+                    <input type="text" class="form-control" name="name" ng-model="user.name" required />
+                </div>
+                <div class="form-group" show-errors>
+                    <input type="email" class="form-control" name="email" ng-model="user.email" required />
+                </div>
+            </form>
+        </div>
+
+
+
+
+    </div>
+</div>
+
